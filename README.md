@@ -32,12 +32,12 @@ Check [lazychaser/laravel-nestedset](https://github.com/lazychaser/laravel-neste
 
 namespace App;
 
-use BrianFaust\Categorizable\HasCategories;
+use BrianFaust\Categorizable\Categorizable;
 use Illuminate\Database\Eloquent\Model;
 
 class Post extends Model
 {
-    use HasCategories;
+    use Categorizable;
 }
 ```
 
