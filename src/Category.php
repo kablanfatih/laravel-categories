@@ -22,15 +22,16 @@ declare(strict_types=1);
 
 namespace BrianFaust\Categorizable;
 
+use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\MorphTo;
 use Illuminate\Database\Eloquent\Relations\MorphToMany;
-use Kalnoy\Nestedset\Node;
+use Kalnoy\Nestedset\NodeTrait;
 use Spatie\Sluggable\HasSlug;
 use Spatie\Sluggable\SlugOptions;
 
-class Category extends Node
+class Category extends Model
 {
-    use HasSlug;
+    use NodeTrait, HasSlug;
 
     /**
      * @var array
