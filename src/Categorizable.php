@@ -23,7 +23,7 @@ trait Categorizable
      */
     public function categories(): MorphToMany
     {
-        return $this->morphToMany(Category::class, 'categorizable', 'categories_relations');
+        return $this->morphToMany(config('categorizable.models.category'), 'categorizable', 'categories_relations');
     }
 
     /**
