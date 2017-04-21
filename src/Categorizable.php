@@ -38,7 +38,7 @@ trait Categorizable
     /**
      * @return mixed
      */
-    public function categoriesList(): aray
+    public function categoriesList(): array
     {
         return $this->categories()
                     ->lists('name', 'id')
