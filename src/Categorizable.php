@@ -33,7 +33,7 @@ trait Categorizable
     public function categoriesList(): array
     {
         return $this->categories()
-                    ->lists('name', 'id')
+                    ->pluck('name', 'id')
                     ->toArray();
     }
 
