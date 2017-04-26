@@ -10,7 +10,7 @@
     }],
     "require": {
         "php": "^7.1",
-        "illuminate/database": "5.3.* || 5.4.*",
+        "illuminate/database": "5.4.*",
         "faustbrian/laravel-service-provider": "^1.0",
         "kalnoy/nestedset": "^4.1",
         "spatie/laravel-sluggable": "^1.2"
