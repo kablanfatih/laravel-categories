@@ -1,8 +1,5 @@
 <?php
 
-
-declare(strict_types=1);
-
 /*
  * This file is part of Laravel Categorizable.
  *
@@ -12,7 +9,7 @@ declare(strict_types=1);
  * file that was distributed with this source code.
  */
 
-namespace BrianFaust\Categorizable;
+namespace BrianFaust\Categorizable\Traits;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\MorphToMany;
@@ -24,7 +21,11 @@ trait Categorizable
      */
     public function categories(): MorphToMany
     {
-        return $this->morphToMany(config('categorizable.models.category'), 'categorizable', 'categories_relations');
+        return $this->morphToMany(
+            config('laravel-categorizable.models.category'),
+            'categorizable',
+            'categories_relations'
+        );
     }
 
     /**
@@ -40,7 +41,7 @@ trait Categorizable
     /**
      * @param $categories
      */
-    public function categorize($categories): void
+    public function categorize($categories)
     {
         foreach ($categories as $category) {
             $this->addCategory($category);
@@ -50,7 +51,7 @@ trait Categorizable
     /**
      * @param $categories
      */
-    public function uncategorize($categories): void
+    public function uncategorize($categories)
     {
         foreach ($categories as $category) {
             $this->removeCategory($category);
@@ -60,7 +61,7 @@ trait Categorizable
     /**
      * @param $categories
      */
-    public function recategorize($categories): void
+    public function recategorize($categories)
     {
         $this->categories()->sync([]);
 
@@ -70,7 +71,7 @@ trait Categorizable
     /**
      * @param Model $category
      */
-    public function addCategory(Model $category): void
+    public function addCategory(Model $category)
     {
         if (!$this->categories->contains($category->getKey())) {
             $this->categories()->attach($category);
@@ -80,7 +81,7 @@ trait Categorizable
     /**
      * @param Model $category
      */
-    public function removeCategory(Model $category): void
+    public function removeCategory(Model $category)
     {
         $this->categories()->detach($category);
     }
