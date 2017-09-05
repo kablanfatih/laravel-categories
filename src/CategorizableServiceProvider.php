@@ -27,7 +27,7 @@ class CategorizableServiceProvider extends ServiceProvider
         ], 'migrations');
 
         $this->publishes([
-            __DIR__.'/../config/laravel-categorizable.php' => config_path('laravel-categorizable.php'),
+            __DIR__.'/../resources/config/categorizable.php' => config_path('laravel-categorizable.php'),
         ], 'config');
     }
 
@@ -36,6 +36,6 @@ class CategorizableServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->mergeConfigFrom(__DIR__.'/../config/laravel-categorizable.php', 'laravel-categorizable');
+        $this->mergeConfigFrom(__DIR__.'/../resources/config/categorizable.php', 'laravel-categorizable');
     }
 }
