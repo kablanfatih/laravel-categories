@@ -27,7 +27,7 @@ return [
         |--------------------------------------------------------------------------
         */
 
-        'category' => \BrianFaust\Categorizable\Category::class,
+        'category' => \BrianFaust\Categorizable\Models\Category::class,
 
     ],
 
