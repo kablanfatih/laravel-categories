@@ -12,13 +12,13 @@
         "php": ">=7.0.0",
         "illuminate/database": "5.4.* || 5.5.*",
         "illuminate/support": "5.4.* || 5.5.*",
-        "kalnoy/nestedset": "^4.1",
-        "spatie/laravel-sluggable": "^1.2"
+        "kalnoy/nestedset": "^4.3",
+        "spatie/laravel-sluggable": "^2.1"
     },
     "require-dev": {
-        "graham-campbell/testbench": "^3.3",
-        "mockery/mockery": "^0.9.5",
-        "phpunit/phpunit": "^6.1"
+        "graham-campbell/testbench": "^5.0",
+        "mockery/mockery": "^1.0",
+        "phpunit/phpunit": "^6.5"
     },
     "autoload": {
         "psr-4": {
