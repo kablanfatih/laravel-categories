@@ -26,7 +26,7 @@ Check [lazychaser/laravel-nestedset](https://github.com/lazychaser/laravel-neste
 
 namespace App;
 
-use BrianFaust\Categorizable\Categorizable;
+use BrianFaust\Categorizable\Traits\Categorizable;
 use Illuminate\Database\Eloquent\Model;
 
 class Post extends Model
