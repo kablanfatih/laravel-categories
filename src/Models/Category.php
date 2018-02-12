@@ -13,12 +13,12 @@ declare(strict_types=1);
 
 namespace BrianFaust\Categorizable\Models;
 
-use Spatie\Sluggable\HasSlug;
-use Kalnoy\Nestedset\NodeTrait;
-use Spatie\Sluggable\SlugOptions;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\MorphTo;
 use Illuminate\Database\Eloquent\Relations\MorphToMany;
+use Kalnoy\Nestedset\NodeTrait;
+use Spatie\Sluggable\HasSlug;
+use Spatie\Sluggable\SlugOptions;
 
 class Category extends Model
 {
