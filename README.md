@@ -52,7 +52,7 @@ $post->categorize([Category::find(1), Category::find(2), Category::find(3)]);
 $post->uncategorize([Category::find(1)]);
 ```
 
-### Detach the Post Model from all Catgeories and attach it to the new ones
+### Detach the Post Model from all Categories and attach it to the new ones
 ``` php
 $post->recategorize([Category::find(1), Category::find(3)]);
 ```
