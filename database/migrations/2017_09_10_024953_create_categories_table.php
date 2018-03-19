@@ -24,7 +24,7 @@ class CreateCategoriesTable extends Migration
             $table->string('name');
             $table->string('slug');
             $table->text('description')->nullable();
-            $table->text('type')->default('default');
+            $table->string('type')->default('default');
             NestedSet::columns($table);
             $table->timestamps();
         });
