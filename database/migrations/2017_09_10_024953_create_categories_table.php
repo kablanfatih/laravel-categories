@@ -22,8 +22,9 @@ class CreateCategoriesTable extends Migration
         Schema::create('categories', function (Blueprint $table) {
             $table->increments('id');
             $table->string('name');
-            $table->text('description')->nullable();
             $table->string('slug');
+            $table->text('description')->nullable();
+            $table->text('type')->default('default');
             NestedSet::columns($table);
             $table->timestamps();
         });
