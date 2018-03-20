@@ -31,12 +31,12 @@ Check [lazychaser/laravel-nestedset](https://github.com/lazychaser/laravel-neste
 
 namespace App;
 
-use BrianFaust\Categories\Traits\Categories;
+use BrianFaust\Categories\Traits\HasCategories;
 use Illuminate\Database\Eloquent\Model;
 
 class Post extends Model
 {
-    use Categories;
+    use HasCategories;
 }
 ```
 
@@ -49,22 +49,22 @@ $post->categoriesList();
 
 ### Attach the Post Model these Categories
 ``` php
-$post->categorize([Category::find(1), Category::find(2), Category::find(3)]);
+$post->syncCategories([Category::find(1), Category::find(2), Category::find(3)]);
 ```
 
 ### Detach the Post Model from these Categories
 ``` php
-$post->uncategorize([Category::find(1)]);
+$post->syncCategories([]);
 ```
 
 ### Detach the Post Model from all Categories and attach it to the new ones
 ``` php
-$post->recategorize([Category::find(1), Category::find(3)]);
+$post->syncCategories([Category::find(1), Category::find(3)]);
 ```
 
 ### Attach the Post Model to the given Category
 ``` php
-$post->addCategory(Category::find(1));
+$post->assignCategory(Category::find(1));
 ```
 
 ### Detach the Post Model from the given Category
