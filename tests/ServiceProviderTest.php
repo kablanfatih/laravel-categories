@@ -3,7 +3,7 @@
 declare(strict_types=1);
 
 /*
- * This file is part of Laravel Categorizable.
+ * This file is part of Laravel Categories.
  *
  * (c) Brian Faust <hello@brianfaust.de>
  *
@@ -11,10 +11,13 @@ declare(strict_types=1);
  * file that was distributed with this source code.
  */
 
-namespace BrianFaust\Tests\Categorizable;
+namespace BrianFaust\Tests\Categories;
 
 use GrahamCampbell\TestBenchCore\ServiceProviderTrait;
 
+/**
+ * @coversNothing
+ */
 class ServiceProviderTest extends AbstractTestCase
 {
     use ServiceProviderTrait;

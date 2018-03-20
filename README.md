@@ -1,22 +1,22 @@
-# Laravel Categorizable
+# Laravel Categories
 
-[![Build Status](https://img.shields.io/travis/faustbrian/Laravel-Categorizable/master.svg?style=flat-square)](https://travis-ci.org/faustbrian/Laravel-Categorizable)
-[![PHP from Packagist](https://img.shields.io/packagist/php-v/faustbrian/laravel-categorizable.svg?style=flat-square)]()
-[![Latest Version](https://img.shields.io/github/release/faustbrian/Laravel-Categorizable.svg?style=flat-square)](https://github.com/faustbrian/Laravel-Categorizable/releases)
-[![License](https://img.shields.io/packagist/l/faustbrian/Laravel-Categorizable.svg?style=flat-square)](https://packagist.org/packages/faustbrian/Laravel-Categorizable)
+[![Build Status](https://img.shields.io/travis/faustbrian/Laravel-Categories/master.svg?style=flat-square)](https://travis-ci.org/faustbrian/Laravel-Categories)
+[![PHP from Packagist](https://img.shields.io/packagist/php-v/faustbrian/laravel-categories.svg?style=flat-square)]()
+[![Latest Version](https://img.shields.io/github/release/faustbrian/Laravel-Categories.svg?style=flat-square)](https://github.com/faustbrian/Laravel-Categories/releases)
+[![License](https://img.shields.io/packagist/l/faustbrian/Laravel-Categories.svg?style=flat-square)](https://packagist.org/packages/faustbrian/Laravel-Categories)
 
 ## Installation
 
 Require this package, with [Composer](https://getcomposer.org/), in the root directory of your project.
 
 ``` bash
-$ composer require faustbrian/laravel-categorizable
+$ composer require faustbrian/laravel-categories
 ```
 
 To get started, you'll need to publish the vendor assets and migrate:
 
 ```
-php artisan vendor:publish --provider="BrianFaust\Categorizable\CategorizableServiceProvider" && php artisan migrate
+php artisan vendor:publish --provider="BrianFaust\Categories\CategoriesServiceProvider" && php artisan migrate
 ```
 
 ## Usage
@@ -31,12 +31,12 @@ Check [lazychaser/laravel-nestedset](https://github.com/lazychaser/laravel-neste
 
 namespace App;
 
-use BrianFaust\Categorizable\Traits\Categorizable;
+use BrianFaust\Categories\Traits\Categories;
 use Illuminate\Database\Eloquent\Model;
 
 class Post extends Model
 {
-    use Categorizable;
+    use Categories;
 }
 ```
 

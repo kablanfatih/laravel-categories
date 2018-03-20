@@ -3,7 +3,7 @@
 declare(strict_types=1);
 
 /*
- * This file is part of Laravel Categorizable.
+ * This file is part of Laravel Categories.
  *
  * (c) Brian Faust <hello@brianfaust.de>
  *
@@ -27,7 +27,7 @@ return [
         |--------------------------------------------------------------------------
         */
 
-        'category' => \BrianFaust\Categorizable\Models\Category::class,
+        'category' => \BrianFaust\Categories\Models\Category::class,
 
     ],
 

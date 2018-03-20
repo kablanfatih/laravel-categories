@@ -3,7 +3,7 @@
 declare(strict_types=1);
 
 /*
- * This file is part of Laravel Categorizable.
+ * This file is part of Laravel Categories.
  *
  * (c) Brian Faust <hello@brianfaust.de>
  *
@@ -31,7 +31,7 @@ class CreateCategoriesTable extends Migration
 
         Schema::create('categories_relations', function (Blueprint $table) {
             $table->integer('category_id');
-            $table->morphs('categorizable');
+            $table->morphs('categories');
             $table->timestamps();
         });
     }

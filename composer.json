@@ -1,7 +1,7 @@
 {
-    "name": "faustbrian/laravel-categorizable",
-    "description": "Categorizable Polymorphic Eloquent Models for Laravel 5",
-    "keywords": ["laravel", "framework", "Laravel-Categorizable", "Laravel Categorizable", "Brian Faust", "faustbrian"],
+    "name": "faustbrian/laravel-categories",
+    "description": "Associate Eloquent Models with Categories",
+    "keywords": ["laravel", "framework", "categories", "polymorphic", "eloquent"],
     "license": "MIT",
     "authors": [{
         "name": "Brian Faust",
@@ -22,12 +22,12 @@
     },
     "autoload": {
         "psr-4": {
-            "BrianFaust\\Categorizable\\": "src/"
+            "BrianFaust\\Categories\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "BrianFaust\\Tests\\Categorizable\\": "tests"
+            "BrianFaust\\Tests\\Categories\\": "tests"
         }
     },
     "config": {
@@ -40,7 +40,7 @@
         },
         "laravel": {
             "providers": [
-                "BrianFaust\\Categorizable\\CategorizableServiceProvider"
+                "BrianFaust\\Categories\\CategoriesServiceProvider"
             ]
         }
     },

@@ -3,7 +3,7 @@
 declare(strict_types=1);
 
 /*
- * This file is part of Laravel Categorizable.
+ * This file is part of Laravel Categories.
  *
  * (c) Brian Faust <hello@brianfaust.de>
  *
@@ -11,11 +11,11 @@ declare(strict_types=1);
  * file that was distributed with this source code.
  */
 
-namespace BrianFaust\Categorizable;
+namespace BrianFaust\Categories;
 
 use Illuminate\Support\ServiceProvider;
 
-class CategorizableServiceProvider extends ServiceProvider
+class CategoriesServiceProvider extends ServiceProvider
 {
     /**
      * Bootstrap the application services.
@@ -27,7 +27,7 @@ class CategorizableServiceProvider extends ServiceProvider
         ], 'migrations');
 
         $this->publishes([
-            __DIR__.'/../resources/config/categorizable.php' => config_path('laravel-categorizable.php'),
+            __DIR__.'/../resources/config/categories.php' => config_path('laravel-categories.php'),
         ], 'config');
     }
 
@@ -36,6 +36,6 @@ class CategorizableServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->mergeConfigFrom(__DIR__.'/../resources/config/categorizable.php', 'laravel-categorizable');
+        $this->mergeConfigFrom(__DIR__.'/../resources/config/categories.php', 'laravel-categories');
     }
 }
