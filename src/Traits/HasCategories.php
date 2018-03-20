@@ -26,8 +26,8 @@ trait HasCategories
     {
         return $this->morphToMany(
             config('laravel-categories.models.category'),
-            'categories',
-            'categories_relations'
+            'model',
+            'model_has_categories'
         );
     }
 

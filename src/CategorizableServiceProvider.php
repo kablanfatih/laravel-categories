@@ -17,9 +17,6 @@ use Illuminate\Support\ServiceProvider;
 
 class CategoriesServiceProvider extends ServiceProvider
 {
-    /**
-     * Bootstrap the application services.
-     */
     public function boot()
     {
         $this->publishes([
@@ -27,15 +24,12 @@ class CategoriesServiceProvider extends ServiceProvider
         ], 'migrations');
 
         $this->publishes([
-            __DIR__.'/../resources/config/categories.php' => config_path('laravel-categories.php'),
+            __DIR__.'/../resources/config/categories.php' => config_path('categories.php'),
         ], 'config');
     }
 
-    /**
-     * Register the application services.
-     */
     public function register()
     {
-        $this->mergeConfigFrom(__DIR__.'/../resources/config/categories.php', 'laravel-categories');
+        $this->mergeConfigFrom(__DIR__.'/../resources/config/categories.php', 'categories');
     }
 }

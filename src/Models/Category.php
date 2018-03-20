@@ -24,54 +24,35 @@ class Category extends Model
 {
     use NodeTrait, HasSlug;
 
-    /**
-     * @var array
-     */
     protected $guarded = ['id', 'created_at', 'updated_at'];
 
-    /**
-     * @return \Illuminate\Database\Eloquent\Relations\MorphTo
-     */
     public function categories(): MorphTo
     {
         return $this->morphTo();
     }
 
-    /**
-     * @param $class
-     *
-     * @return \Illuminate\Database\Eloquent\Relations\MorphToMany
-     */
     public function entries(string $class): MorphToMany
     {
-        return $this->morphedByMany($class, 'categories', 'categories_relations');
+        return $this->morphedByMany($class, 'model', 'model_has_categories');
     }
 
-    /**
-     * @return mixed
-     */
     public static function tree(): array
     {
         return static::get()->toTree()->toArray();
     }
 
-    public static function findByName(string $name)
+    public static function findByName(string $name): self
     {
         return static::where('name', $name)->orWhere('slug', $name)->firstOrFail();
     }
 
-    public static function findById(int $id)
+    public static function findById(int $id): self
     {
         return static::findOrFail($id);
     }
 
-    /**
-     * Get the options for generating the slug.
-     */
     public function getSlugOptions(): SlugOptions
     {
-        return SlugOptions::create()
-            ->generateSlugsFrom('name')
-            ->saveSlugsTo('slug');
+        return SlugOptions::create()->generateSlugsFrom('name')->saveSlugsTo('slug');
     }
 }

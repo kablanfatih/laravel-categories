@@ -23,22 +23,20 @@ class CreateCategoriesTable extends Migration
             $table->increments('id');
             $table->string('name');
             $table->string('slug');
-            $table->text('description')->nullable();
             $table->string('type')->default('default');
             NestedSet::columns($table);
             $table->timestamps();
         });
 
-        Schema::create('categories_relations', function (Blueprint $table) {
+        Schema::create('model_has_categories', function (Blueprint $table) {
             $table->integer('category_id');
-            $table->morphs('categories');
-            $table->timestamps();
+            $table->morphs('model');
         });
     }
 
     public function down()
     {
         Schema::dropIfExists('categories');
-        Schema::dropIfExists('categories_relations');
+        Schema::dropIfExists('model_has_categories');
     }
 }
