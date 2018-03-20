@@ -15,7 +15,7 @@ namespace BrianFaust\Categories;
 
 use Illuminate\Support\ServiceProvider;
 
-class CategoriesServiceProvider extends ServiceProvider
+class CategorizableServiceProvider extends ServiceProvider
 {
     public function boot()
     {
