@@ -22,7 +22,7 @@ trait HasCategories
     public function categories(): MorphToMany
     {
         return $this->morphToMany(
-            config('laravel-categories.models.category'),
+            config('categories.models.category'),
             'model',
             'model_has_categories'
         );
