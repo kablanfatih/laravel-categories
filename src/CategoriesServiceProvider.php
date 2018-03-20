@@ -24,12 +24,12 @@ class CategoriesServiceProvider extends ServiceProvider
         ], 'migrations');
 
         $this->publishes([
-            __DIR__.'/../resources/config/categories.php' => config_path('categories.php'),
+            __DIR__.'/../config/categories.php' => config_path('categories.php'),
         ], 'config');
     }
 
     public function register()
     {
-        $this->mergeConfigFrom(__DIR__.'/../resources/config/categories.php', 'categories');
+        $this->mergeConfigFrom(__DIR__.'/../config/categories.php', 'categories');
     }
 }
