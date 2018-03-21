@@ -15,7 +15,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Kalnoy\Nestedset\NestedSet;
 
-class CreateCategoriesTable extends Migration
+class CreateCategoriesTables extends Migration
 {
     public function up()
     {
