@@ -1,13 +1,21 @@
 {
     "name": "artisanry/categories",
     "description": "Associate Eloquent Models with Categories",
-    "keywords": ["laravel", "framework", "categories", "polymorphic", "eloquent"],
+    "keywords": [
+        "laravel",
+        "framework",
+        "categories",
+        "polymorphic",
+        "eloquent"
+    ],
     "license": "MIT",
-    "authors": [{
-        "name": "Brian Faust",
-        "email": "hello@basecode.sh",
-        "homepage": "https://basecode.sh"
-    }],
+    "authors": [
+        {
+            "name": "Brian Faust",
+            "email": "hello@basecode.sh",
+            "homepage": "https://basecode.sh"
+        }
+    ],
     "require": {
         "php": ">=7.0.0",
         "illuminate/database": "^5.8",
