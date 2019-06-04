@@ -1,22 +1,22 @@
 # Laravel Categories
 
-[![Build Status](https://img.shields.io/travis/faustbrian/Laravel-Categories/master.svg?style=flat-square)](https://travis-ci.org/faustbrian/Laravel-Categories)
-[![PHP from Packagist](https://img.shields.io/packagist/php-v/faustbrian/laravel-categories.svg?style=flat-square)]()
-[![Latest Version](https://img.shields.io/github/release/faustbrian/Laravel-Categories.svg?style=flat-square)](https://github.com/faustbrian/Laravel-Categories/releases)
-[![License](https://img.shields.io/packagist/l/faustbrian/Laravel-Categories.svg?style=flat-square)](https://packagist.org/packages/faustbrian/Laravel-Categories)
+[![Build Status](https://img.shields.io/travis/artisanry/Categories/master.svg?style=flat-square)](https://travis-ci.org/artisanry/Categories)
+[![PHP from Packagist](https://img.shields.io/packagist/php-v/artisanry/categories.svg?style=flat-square)]()
+[![Latest Version](https://img.shields.io/github/release/artisanry/Categories.svg?style=flat-square)](https://github.com/artisanry/Categories/releases)
+[![License](https://img.shields.io/packagist/l/artisanry/Categories.svg?style=flat-square)](https://packagist.org/packages/artisanry/Categories)
 
 ## Installation
 
 Require this package, with [Composer](https://getcomposer.org/), in the root directory of your project.
 
 ``` bash
-$ composer require faustbrian/laravel-categories
+$ composer require artisanry/categories
 ```
 
 To get started, you'll need to publish the vendor assets and migrate:
 
 ```
-php artisan vendor:publish --provider="BrianFaust\Categories\CategoriesServiceProvider" && php artisan migrate
+php artisan vendor:publish --provider="Artisanry\Categories\CategoriesServiceProvider" && php artisan migrate
 ```
 
 ## Usage
@@ -31,7 +31,7 @@ Check [lazychaser/laravel-nestedset](https://github.com/lazychaser/laravel-neste
 
 namespace App;
 
-use BrianFaust\Categories\Traits\HasCategories;
+use Artisanry\Categories\Traits\HasCategories;
 use Illuminate\Database\Eloquent\Model;
 
 class Post extends Model
@@ -85,7 +85,7 @@ $ phpunit
 
 ## Security
 
-If you discover a security vulnerability within this package, please send an e-mail to hello@brianfaust.me. All security vulnerabilities will be promptly addressed.
+If you discover a security vulnerability within this package, please send an e-mail to hello@basecode.sh. All security vulnerabilities will be promptly addressed.
 
 ## Credits
 
@@ -94,4 +94,4 @@ If you discover a security vulnerability within this package, please send an e-m
 
 ## License
 
-[MIT](LICENSE) © [Brian Faust](https://brianfaust.me)
+[MIT](LICENSE) © [Brian Faust](https://basecode.sh)
