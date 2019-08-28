@@ -14,7 +14,6 @@ declare(strict_types=1);
 namespace Artisanry\Categories\Traits;
 
 use Artisanry\Categories\Models\Category;
-use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\MorphToMany;
 
 trait HasCategories
