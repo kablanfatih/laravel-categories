@@ -9,17 +9,15 @@
         "eloquent"
     ],
     "license": "MPL-2.0",
-    "authors": [
-        {
-            "name": "Brian Faust",
-            "email": "hello@basecode.sh",
-            "homepage": "https://basecode.sh"
-        }
-    ],
+    "authors": [{
+        "name": "Brian Faust",
+        "email": "hello@basecode.sh",
+        "homepage": "https://basecode.sh"
+    }],
     "require": {
         "php": ">=7.0.0",
-        "illuminate/database": "^5.8",
-        "illuminate/support": "^5.8",
+        "illuminate/database": "^5.8|^6.0",
+        "illuminate/support": "^5.8|^6.0",
         "kalnoy/nestedset": "^4.3",
         "spatie/laravel-sluggable": "^2.1"
     },
