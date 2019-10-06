@@ -18,7 +18,7 @@
         "php": ">=7.0.0",
         "illuminate/database": "^5.8|^6.0",
         "illuminate/support": "^5.8|^6.0",
-        "kalnoy/nestedset": "^4.3",
+        "kalnoy/nestedset": "^5.0.0",
         "spatie/laravel-sluggable": "^2.1"
     },
     "require-dev": {
