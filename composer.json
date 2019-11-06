@@ -9,12 +9,6 @@
         "eloquent"
     ],
     "license": "MPL-2.0",
-    "repositories": [
-        {
-            "type": "vcs",
-            "url": "https://github.com/kablanfatih/laravel-nestedset.git"
-        }
-        ],
     "authors": [{
         "name": "Brian Faust",
         "email": "hello@basecode.sh",
@@ -24,7 +18,6 @@
         "php": ">=7.0.0",
         "illuminate/database": "~5.8|^6.5.0",
         "illuminate/support": "~5.8|^6.5.0",
-        "kalnoy/nestedset": "^5.0.0",
         "spatie/laravel-sluggable": "^2.1"
     },
     "require-dev": {
