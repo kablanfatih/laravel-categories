@@ -12,7 +12,7 @@
     "repositories": [
         {
             "type": "vcs",
-            "url": "https://github.com/lazychaser/laravel-nestedset.git"
+            "url": "https://github.com/kablanfatih/laravel-nestedset.git"
         }
         ],
     "authors": [{
