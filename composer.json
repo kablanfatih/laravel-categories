@@ -9,6 +9,12 @@
         "eloquent"
     ],
     "license": "MPL-2.0",
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/lazychaser/laravel-nestedset.git"
+        }
+        ],
     "authors": [{
         "name": "Brian Faust",
         "email": "hello@basecode.sh",
