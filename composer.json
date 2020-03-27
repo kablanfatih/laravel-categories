@@ -16,9 +16,9 @@
     }],
     "require": {
         "php": ">=7.0.0",
-        "illuminate/database": "~5.8|^6.5.0",
-        "illuminate/support": "~5.8|^6.5.0",
-        "spatie/laravel-sluggable": "^2.1"
+        "illuminate/database": "~5.8|^7.3.0",
+        "illuminate/support": "~5.8|^7.3.0",
+        "spatie/laravel-sluggable": "^2.4.0"
     },
     "require-dev": {
         "graham-campbell/testbench": "^5.0",
